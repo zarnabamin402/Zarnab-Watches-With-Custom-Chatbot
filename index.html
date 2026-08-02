@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zainab Watches | Timeless Elegance, Everyday Grace</title>
+    <meta name="description" content="Discover Zainab Watches - Boutique luxury timepieces designed with timeless elegance and everyday grace. Explore our curated featured collection.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>✨ Complimentary Worldwide Express Shipping & 5-Year Luxury Warranty on All Orders</p>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-main">ZAINAB</span>
+                <span class="logo-sub">WATCHES</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#collection" class="nav-link">Collection</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#contact" class="nav-link">Boutique Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn cart-btn" id="cart-toggle-btn" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cart-badge-count">0</span>
+                </button>
+                <button class="mobile-toggle-btn" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- (1) Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="gold-badge">
+                        <i class="fa-solid fa-crown"></i> 2026 Sovereign Collection
+                    </div>
+                    <h1 class="hero-title">ZAINAB WATCHES</h1>
+                    <p class="hero-tagline">Timeless Elegance, Everyday Grace</p>
+                    <p class="hero-description">
+                        Curated for individuals who value understated luxury, precision engineering, and enduring aesthetic mastery. Elevate your presence with every second.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#collection" class="btn btn-primary">
+                            <span>Explore Collection</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-outline">
+                            <span>Our Heritage</span>
+                        </a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>5-Year International Warranty</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-gem"></i>
+                            <span>Sapphire Crystal Glass</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span>50m Water Resistance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="image-wrapper">
+                        <div class="gold-halo"></div>
+                        <img src="images/hero.png" alt="Zainab Sovereign Luxury Watch" class="hero-watch-img">
+                        <div class="floating-card glass-card">
+                            <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+                            <div>
+                                <span class="card-title">Handcrafted Precision</span>
+                                <span class="card-sub">Swiss Movement Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- (2) Featured Collection Section -->
+        <section class="collection-section" id="collection">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">THE CURATED GALLERY</span>
+                    <h2 class="section-title">Featured Timepieces</h2>
+                    <div class="gold-divider"></div>
+                    <p class="section-desc">Each masterpiece combines meticulously polished cases, sapphire crystal protection, and refined movements.</p>
+                </div>
+
+                <!-- Collection Filters -->
+                <div class="collection-filters">
+                    <button class="filter-btn active" data-filter="all">All Models</button>
+                    <button class="filter-btn" data-filter="gold">Gold & Rose Gold</button>
+                    <button class="filter-btn" data-filter="automatic">Automatic</button>
+                    <button class="filter-btn" data-filter="leather">Leather Strap</button>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="products-grid">
+                    <!-- Product Cards populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- (3) About Section -->
+        <section class="about-section" id="about">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <div class="about-card-stack">
+                        <div class="about-badge-card glass-card">
+                            <span class="big-number">100%</span>
+                            <span class="label">Authentic Handcrafted Craftsmanship</span>
+                        </div>
+                        <div class="about-img-box">
+                            <img src="images/hero.png" alt="Zainab Watches Heritage Design" class="about-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-subtitle">OUR HERITAGE</span>
+                    <h2 class="section-title">The Story Behind Zainab Watches</h2>
+                    <div class="gold-divider left-align"></div>
+                    <p class="about-text">
+                        Founded with a passion for classic watchmaking and refined modern aesthetics, <strong>Zainab Watches</strong> was born from a simple belief: luxury should not be loud to be extraordinary.
+                    </p>
+                    <p class="about-text">
+                        We blend traditional horological artistry with contemporary minimalism, resulting in timepieces that flow seamlessly from morning business engagements to evening galas.
+                    </p>
+                    
+                    <div class="about-pillars">
+                        <div class="pillar">
+                            <div class="pillar-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                            <div>
+                                <h4>Architectural Precision</h4>
+                                <p>Surgical grade 316L stainless steel, custom-brushed gold plating, and scratch-proof sapphire faces.</p>
+                            </div>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon"><i class="fa-solid fa-heart"></i></div>
+                            <div>
+                                <h4>Everyday Grace</h4>
+                                <p>Designed for effortless weight, ergonomic wrist harmony, and versatile styling.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="founder-quote glass-card">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p class="quote-text">"A watch is more than an instrument of time; it is a quiet statement of character and grace that accompanies you through life's most precious milestones."</p>
+                        <span class="quote-author">— Zainab, Founder & Creative Director</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- (4) Contact & Location Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">CONCIERGE & STORE LOCATION</span>
+                    <h2 class="section-title">Connect With Our Boutique</h2>
+                    <div class="gold-divider"></div>
+                    <p class="section-desc">Have a question about custom sizing, gift wrapping, or order status? Send us a message or visit our private showroom.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information Cards -->
+                    <div class="contact-info">
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h3>Flagship Boutique</h3>
+                                <p>Suite 402, Golden Horizon Tower, Pearl Avenue, London & Dubai</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h3>Email Concierge</h3>
+                                <p><a href="mailto:concierge@zainabwatches.com">concierge@zainabwatches.com</a></p>
+                                <p><a href="mailto:support@zainabwatches.com">support@zainabwatches.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <h3>WhatsApp VIP Ordering</h3>
+                                <p><a href="https://wa.me/1234567890" target="_blank" class="gold-link">+1 (800) 555-ZAINAB</a></p>
+                                <span class="availability-tag"><i class="fa-solid fa-circle"></i> Available 24/7 for instant inquiries</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div>
+                                <h3>Showroom Hours</h3>
+                                <p>Monday – Saturday: 10:00 AM – 8:00 PM</p>
+                                <p>Sunday: By Appointment Only</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper glass-card">
+                        <h3>Send a Direct Inquiry</h3>
+                        <form id="boutique-contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name *</label>
+                                <input type="text" id="contact-name" placeholder="e.g. Sarah Jenkins" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" placeholder="sarah@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Inquiry Subject</label>
+                                <select id="contact-subject">
+                                    <option value="General Question">General Product Question</option>
+                                    <option value="Custom Order">Custom Order / Bespoke Engraving</option>
+                                    <option value="Warranty Care">Warranty & Care Request</option>
+                                    <option value="VIP Appointment">Showroom Private Appointment</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Your Message *</label>
+                                <textarea id="contact-message" rows="4" placeholder="How can our concierge assist you today?" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Inquiry</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div id="form-feedback" class="form-feedback hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- (5) Footer Section -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="#" class="brand-logo">
+                    <span class="logo-main">ZAINAB</span>
+                    <span class="logo-sub">WATCHES</span>
+                </a>
+                <p class="footer-text">Timeless Elegance, Everyday Grace. Luxury craftsmanship tailored for your finest moments.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://pinterest.com" target="_blank" aria-label="Pinterest" class="social-btn"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#collection">Featured Collection</a></li>
+                    <li><a href="#about">Brand Story</a></li>
+                    <li><a href="#contact">Showroom & Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#about">Warranty & Authenticity</a></li>
+                    <li><a href="#contact">Bespoke Engraving</a></li>
+                    <li><a href="#contact">Shipping & Returns</a></li>
+                    <li><a href="#contact">Care Instructions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>VIP Privilege Club</h4>
+                <p>Subscribe to receive exclusive access to new releases & private trunk shows.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Zainab Watches. All Rights Reserved. Designed with luxury precision.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Your Luxury Selection</h3>
+            <button class="close-cart-btn" id="close-cart-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-body" id="cart-items-container">
+            <!-- Populated via JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span class="subtotal-amount" id="cart-subtotal-price">$0.00</span>
+            </div>
+            <p class="shipping-note">Free worldwide insured shipping applied at checkout.</p>
+            <button class="btn btn-primary btn-full" id="checkout-btn">
+                <span>Proceed to Checkout</span>
+                <i class="fa-solid fa-lock"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="product-modal glass-card" id="product-modal">
+        <button class="close-modal-btn" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-body" id="modal-body-content">
+            <!-- Dynamic product view -->
+        </div>
+    </div>
+
+    <!-- (6) Floating Chatbot Widget ("Ask Zainab Watches Assistant") -->
+    <div class="chatbot-widget-container">
+        <!-- Floating Trigger Button -->
+        <button class="chatbot-trigger-btn" id="chatbot-trigger" aria-label="Ask Zainab Watches Assistant">
+            <div class="trigger-icon-wrap">
+                <i class="fa-solid fa-comments chat-open-icon"></i>
+                <i class="fa-solid fa-xmark chat-close-icon hidden"></i>
+            </div>
+            <span class="trigger-label">Ask Zainab Watches Assistant</span>
+            <span class="online-indicator"></span>
+        </button>
+
+        <!-- Chat Window Modal -->
+        <div class="chatbot-window glass-card hidden" id="chatbot-window">
+            <!-- Chat Window Header -->
+            <div class="chat-header">
+                <div class="assistant-info">
+                    <div class="assistant-avatar">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <div>
+                        <h4 class="assistant-name">Zara</h4>
+                        <span class="assistant-status"><i class="fa-solid fa-circle"></i> Virtual Boutique Assistant</span>
+                    </div>
+                </div>
+                <button class="chat-minimize-btn" id="chat-minimize-btn" title="Minimize"><i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+
+            <!-- Chat Messages Container -->
+            <div class="chat-messages" id="chat-messages">
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <p>Welcome to <strong>Zainab Watches</strong>. I'm <strong>Zara</strong>, your personal boutique assistant. How may I assist you with our collection, materials, or warranty today?</p>
+                    </div>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+
+            <!-- Suggested Quick Prompts -->
+            <div class="quick-prompts" id="quick-prompts">
+                <button class="prompt-chip" data-prompt="What watches are water resistant?">💧 Water Resistance</button>
+                <button class="prompt-chip" data-prompt="Tell me about your 5-year warranty.">🛡️ 5-Year Warranty</button>
+                <button class="prompt-chip" data-prompt="Can I request custom engraving?">✨ Custom Engraving</button>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator hidden" id="typing-indicator">
+                <span>Zara is thinking</span>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!-- Chat Input Area -->
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask Zara anything about our watches..." autocomplete="off">
+                <button id="send-chat-btn" class="send-chat-btn" aria-label="Send Message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

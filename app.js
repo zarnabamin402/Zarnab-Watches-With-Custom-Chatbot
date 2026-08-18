@@ -1,11 +1,11 @@
 /* ==========================================================================
-   ZAINAB WATCHES - APPLICATION CORE LOGIC & GEMINI CHATBOT INTEGRATION
+   Zarnab WATCHES - APPLICATION CORE LOGIC & GEMINI CHATBOT INTEGRATION
    ========================================================================== */
 
 // Gemini API Configuration
 // Put your Gemini API Key here or enter it when prompted in the chatbot UI
 const GEMINI_API_KEY = window.GEMINI_API_KEY || "YOUR_GEMINI_API_KEY";
-const GEMINI_SYSTEM_INSTRUCTION = `You are "Zara," the friendly virtual assistant for Zainab Watches, a boutique watch store known for timeless, elegant designs. Your job is to help customers browse the collection, answer questions about watch materials, sizing, water resistance, warranty, and care instructions, and guide them toward making a purchase or contacting the store for custom orders. Keep your tone warm, polished, and concise — like a helpful boutique staff member, not a generic bot. If you don't know specific stock or pricing details, politely direct the customer to contact the store directly via WhatsApp or email. Never make up product details you weren't given.`;
+const GEMINI_SYSTEM_INSTRUCTION = `You are "Zara," the friendly virtual assistant for Zarnab Watches, a boutique watch store known for timeless, elegant designs. Your job is to help customers browse the collection, answer questions about watch materials, sizing, water resistance, warranty, and care instructions, and guide them toward making a purchase or contacting the store for custom orders. Keep your tone warm, polished, and concise — like a helpful boutique staff member, not a generic bot. If you don't know specific stock or pricing details, politely direct the customer to contact the store directly via WhatsApp or email. Never make up product details you weren't given.`;
 
 // Products Data Matrix
 const WATCH_PRODUCTS = [
@@ -78,7 +78,7 @@ let cart = [];
 let chatHistory = [
     {
         role: "model",
-        parts: [{ text: "Welcome to Zainab Watches. I'm Zara, your personal boutique assistant. How may I assist you with our collection, materials, or warranty today?" }]
+        parts: [{ text: "Welcome to Zarnab Watches. I'm Zara, your personal boutique assistant. How may I assist you with our collection, materials, or warranty today?" }]
     }
 ];
 
@@ -115,7 +115,7 @@ function initProductsGrid(filterCategory = "all") {
                 </button>
             </div>
             <div class="product-info">
-                <span class="product-category">Zainab Collection</span>
+                <span class="product-category">Zarnab Collection</span>
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-specs">${product.specs}</p>
                 <div class="product-bottom">
@@ -161,7 +161,7 @@ function initCartDrawer() {
                 alert("Your luxury cart is empty. Please add a timepiece to proceed.");
                 return;
             }
-            alert("Thank you for choosing Zainab Watches! Redirecting to secure concierge checkout window...");
+            alert("Thank you for choosing Zarnab Watches! Redirecting to secure concierge checkout window...");
             cart = [];
             updateCartUI();
             closeCart();
@@ -309,7 +309,7 @@ function initContactForm() {
             if (feedback) {
                 feedback.classList.remove("hidden");
                 feedback.className = "form-feedback success";
-                feedback.innerHTML = `✨ Thank you, ${name}! Your inquiry has been sent directly to our Zainab Concierge team. We will reply within 2 hours.`;
+                feedback.innerHTML = `✨ Thank you, ${name}! Your inquiry has been sent directly to our Zarnab Concierge team. We will reply within 2 hours.`;
                 form.reset();
                 setTimeout(() => feedback.classList.add("hidden"), 6000);
             }
@@ -322,7 +322,7 @@ function initNewsletterForm() {
     if (form) {
         form.addEventListener("submit", (e) => {
             e.preventDefault();
-            alert("✨ Welcome to the Zainab Privilege Club! Check your inbox for your 10% private welcome voucher.");
+            alert("✨ Welcome to the Zarnab Privilege Club! Check your inbox for your 10% private welcome voucher.");
             form.reset();
         });
     }
@@ -503,10 +503,10 @@ function getBoutiqueFallbackResponse(query) {
     const q = query.toLowerCase();
 
     if (q.includes("water") || q.includes("rain") || q.includes("swim")) {
-        return "All Zainab timepieces feature minimum 50m (5 ATM) water resistance, while our flagship *Royal Chrono Sapphire* is rated for 100m. We recommend avoiding hot showers to preserve strap seal integrity.";
+        return "All Zarnab timepieces feature minimum 50m (5 ATM) water resistance, while our flagship *Royal Chrono Sapphire* is rated for 100m. We recommend avoiding hot showers to preserve strap seal integrity.";
     }
     if (q.includes("warranty") || q.includes("guarantee") || q.includes("repair")) {
-        return "Every Zainab watch includes our 5-Year International Luxury Warranty covering movement precision, dial integrity, and manufacturing craftsmanship. For warranty claims, contact concierge@zainabwatches.com.";
+        return "Every Zarnab watch includes our 5-Year International Luxury Warranty covering movement precision, dial integrity, and manufacturing craftsmanship. For warranty claims, contact concierge@Zarnabwatches.com.";
     }
     if (q.includes("engrav") || q.includes("custom") || q.includes("gift")) {
         return "We offer complimentary bespoke laser engraving (up to 20 characters) on back cases for special occasions. Please select 'Custom Order' in our Boutique Contact form or reach out via WhatsApp!";
@@ -518,7 +518,7 @@ function getBoutiqueFallbackResponse(query) {
         return "Our curated collection ranges from $290 to $520 USD. You can browse our Featured Collection right here and click 'Add to Cart' or 'Quick View' for instant ordering!";
     }
 
-    return "Thank you for asking! As Zara at Zainab Watches, I'm delighted to assist. All our watches come with a 5-Year Luxury Warranty, sapphire glass, and complimentary express shipping. For bespoke orders or specific inquiries, feel free to drop a message in our Boutique Contact form!";
+    return "Thank you for asking! As Zara at Zarnab Watches, I'm delighted to assist. All our watches come with a 5-Year Luxury Warranty, sapphire glass, and complimentary express shipping. For bespoke orders or specific inquiries, feel free to drop a message in our Boutique Contact form!";
 }
 
 // Append Chat Message to UI
